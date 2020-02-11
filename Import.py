@@ -13,6 +13,7 @@ year = dataAtual.year
 while time.time() < end_time:
     contador = 0
     print('File Download Start')
+    #url
     url = 'http://www.mdic.gov.br/balanca/bd/comexstat-bd/ncm/EXP_'+str(year)+'.csv'
     urllib.request.urlretrieve(url, 'Exportação_'+str(year)+'.csv')
     contador += 1
